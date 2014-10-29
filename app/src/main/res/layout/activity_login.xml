@@ -5,33 +5,31 @@
     android:background="#e9e8dd"
     tools:context=".LoginActivity"
     android:id="@+id/"
-    android:orientation="vertical">
-
-    <ImageView
-        android:layout_width="fill_parent"
-        android:layout_height="100px"
-        android:background="#5ba4e5"
-        android:layout_gravity="center"
-        android:id="@+id/imageView1"  />
-        <!--android:src="@drawable/logo"-->:
+    android:orientation="vertical"
+    android:weightSum="1">
 
     <EditText
-        android:layout_width="440px"
-        android:layout_height="80px"
+        android:layout_width="500px"
+        android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:layout_marginTop="30px"
+        android:layout_marginTop="125dp"
         android:id="@+id/email"
-        android:hint="Your Email"/>
+        android:hint="Your Email"
+        android:textIsSelectable="false"
+        android:singleLine="false"
+        android:layout_weight="0.06" />
 
     <EditText
-        android:layout_width="440px"
-        android:layout_height="80px"
+        android:layout_width="500px"
+        android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:id="@+id/password"
         android:inputType="textPassword"
-        android:hint="*******"/>
+        android:hint="*******"
+        android:clickable="false"
+        android:layout_weight="0.04" />
     <Button
-        android:layout_width="440px"
+        android:layout_width="500px"
         android:layout_height="80px"
         android:layout_gravity="center"
         android:id="@+id/loginBtn"
@@ -41,18 +39,19 @@
         android:text="Login" />
 
         <LinearLayout
-            android:layout_width="440px"
+            android:layout_width="500px"
             android:layout_height="wrap_content"
             android:layout_marginTop="10px"
             android:layout_gravity="center"
             android:orientation="horizontal" >
             <Button
-                android:layout_width="215px"
+                android:layout_width="match_parent"
                 android:layout_height="80px"
                 android:id="@+id/register"
-                android:layout_marginLeft="@drawable/btn_blue_back"
+                android:background="@drawable/btn_back_blue"
                 android:textColor="#ffffff"
                 android:textAlignment="center"
                 android:text="Register"/>
+
     </LinearLayout>
 </LinearLayout>
