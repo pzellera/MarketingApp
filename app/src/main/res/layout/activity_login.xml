@@ -4,7 +4,8 @@
     android:layout_height="match_parent"
     android:background="#e9e8dd"
     tools:context=".LoginActivity"
-    android:id="@+id/">
+    android:id="@+id/"
+    android:orientation="vertical">
 
     <ImageView
         android:layout_width="fill_parent"
