@@ -2,12 +2,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#ffefffe5"
     tools:context=".LoginActivity"
     android:id="@+id/"
     android:orientation="vertical"
     android:weightSum="1"
-    android:backgroundTint="@android:color/background_light">
+    android:animationCache="true"
+    android:background="#ffffffff">
 
     <TextView
         android:layout_width="match_parent"
