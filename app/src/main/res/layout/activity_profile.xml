@@ -12,4 +12,9 @@
         android:textColor="#ff000000"
         android:textSize="75dp"
         android:gravity="center_horizontal" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"></RelativeLayout>
 </LinearLayout>
