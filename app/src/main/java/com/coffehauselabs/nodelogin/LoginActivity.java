@@ -23,8 +23,8 @@ public class LoginActivity extends Activity{
             @Override
             public void onClick(View view) {
                 //Start activity_register
-                Intent myIntent = new Intent(LoginActivity.this, RegisterActivity.class);
-                startActivity(myIntent);
+                Intent intentRegister = new Intent(LoginActivity.this, RegisterActivity.class);
+                startActivity(intentRegister);
             }
         });
     }

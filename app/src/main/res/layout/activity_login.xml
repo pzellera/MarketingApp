@@ -41,7 +41,7 @@
         android:layout_gravity="center"
         android:id="@+id/password"
         android:inputType="textPassword"
-        android:hint="*******"
+        android:hint="Password"
         android:clickable="false"
         android:layout_weight="0.04" />
     <Button
