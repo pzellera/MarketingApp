@@ -30,7 +30,7 @@
         android:layout_gravity="center"
         android:layout_marginTop="25dp"
         android:id="@+id/email"
-        android:hint="Your Email"
+        android:hint="Email"
         android:textIsSelectable="false"
         android:singleLine="false"
         android:layout_weight="0.06" />
@@ -42,7 +42,6 @@
         android:id="@+id/password"
         android:inputType="textPassword"
         android:hint="Password"
-        android:clickable="false"
         android:layout_weight="0.04" />
     <Button
         android:layout_width="249dp"
@@ -65,7 +64,7 @@
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="62dp"
-                android:id="@+id/register"
+                android:id="@+id/regBtn"
                 android:background="@drawable/btn_register"
                 android:textColor="#ffffff"
                 android:textAlignment="center"

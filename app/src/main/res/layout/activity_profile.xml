@@ -3,7 +3,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#ffffffff"
-    android:id="@+id/">
+    android:id="@+id/welcome"
+    android:orientation="horizontal">
 
     <TextView
         android:layout_width="match_parent"
