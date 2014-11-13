@@ -24,15 +24,6 @@
     <EditText
         android:layout_width="239dp"
         android:layout_height="wrap_content"
-        android:inputType="textPersonName"
-        android:text="Name"
-        android:ems="10"
-        android:id="@+id/editText"
-        android:layout_gravity="center_horizontal" />
-
-    <EditText
-        android:layout_width="239dp"
-        android:layout_height="wrap_content"
         android:id="@+id/email"
         android:layout_gravity="center"
         android:hint="example@email.com"
@@ -54,7 +45,7 @@
         android:layout_width="236dp"
         android:layout_height="wrap_content"
         android:text="Register"
-        android:id="@+id/button"
+        android:id="@+id/regBtn"
         android:layout_gravity="center_horizontal"
         android:backgroundTint="#ffff3334"
         android:textSize="20dp"
