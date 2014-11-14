@@ -33,7 +33,7 @@ public class LoginActivity extends Activity implements OnClickListener{
     JSONParser jsonParser = new JSONParser();
 
     //PHP LOGIN SCRIPT (CHECK OTHER IP ADDRESS!!)
-    private static final String LOGIN_URL = "http://192.168.1.5:80/webService/login.php";
+    private static final String LOGIN_URL = "http://10.0.0.25:80/webService/login.php";
 
     //JSON ELEMENT IDS FROM RESPONSE OF PHP SCRIPTS
     private static final String TAG_SUCCESS = "success";
@@ -94,13 +94,13 @@ public class LoginActivity extends Activity implements OnClickListener{
         protected String doInBackground(String... args){
             //CHECK FOR SUCCESS TAG
             int success;
-            String email = userEmail.getText().toString();
+            String username = userEmail.getText().toString();
             String password = pass.getText().toString();
 
             try{
                 //BUILDING PARAMETERS
                 List<NameValuePair> params = new ArrayList<NameValuePair>();
-                params.add(new BasicNameValuePair("email", email));
+                params.add(new BasicNameValuePair("username", username));
                 params.add(new BasicNameValuePair("password", password));
 
                 Log.d("request!", "starting!");

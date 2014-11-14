@@ -18,7 +18,7 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 
-public class RegisterActivity extends Activity implements OnClickListener{
+public class    RegisterActivity extends Activity implements OnClickListener{
 
     private EditText user, pass;
     private Button regBtn;
@@ -31,8 +31,7 @@ public class RegisterActivity extends Activity implements OnClickListener{
 
 
     //PHP LOGIN SCRIPT
-    private static final String LOGIN_URL = "http://192.168.1.5:80/webService/register.php";
-
+    private static final String LOGIN_URL = "http://10.0.0.25:80/webService/register.php";
     private static final String TAG_SUCCESS = "success";
     private static final String TAG_MESSAGE = "message";
 
@@ -81,7 +80,7 @@ public class RegisterActivity extends Activity implements OnClickListener{
             try{
                 //BUILDING PARAMETERS
                 List<NameValuePair> params = new ArrayList<NameValuePair>();
-                params.add(new BasicNameValuePair("email", username));
+                params.add(new BasicNameValuePair("username", username));
                 params.add(new BasicNameValuePair("password", password));
 
                 Log.d("request!", "starting");
