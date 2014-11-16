@@ -1,22 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.v4.view.ViewPager
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/pager"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#ffffffff"
-    android:id="@+id/welcome"
-    android:orientation="horizontal">
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="183dp"
-        android:text="Welcome!"
-        android:id="@+id/welcomeScreen"
-        android:textColor="#ff000000"
-        android:textSize="75dp"
-        android:gravity="center_horizontal" />
-
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_gravity="center_vertical"></RelativeLayout>
-</LinearLayout>
+    android:background="#ffffffff" />
