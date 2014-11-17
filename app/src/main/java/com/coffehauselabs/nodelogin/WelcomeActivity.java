@@ -31,7 +31,7 @@ public class WelcomeActivity extends FragmentActivity {
             @Override
             public void onTabReselected(android.app.ActionBar.Tab tab,
                                         FragmentTransaction ft) {
-                // TODO Auto-generated method stub
+
             }
             @Override
             public void onTabSelected(ActionBar.Tab tab, FragmentTransaction ft) {
@@ -40,7 +40,7 @@ public class WelcomeActivity extends FragmentActivity {
             @Override
             public void onTabUnselected(android.app.ActionBar.Tab tab,
                                         FragmentTransaction ft) {
-                // TODO Auto-generated method stub
+
             }};
         //Add New Tab
         actionBar.addTab(actionBar.newTab().setText("My Likes").setTabListener(tabListener));

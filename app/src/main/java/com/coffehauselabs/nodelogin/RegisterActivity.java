@@ -31,7 +31,7 @@ public class    RegisterActivity extends Activity implements OnClickListener{
 
 
     //PHP LOGIN SCRIPT
-    private static final String LOGIN_URL = "http://10.0.0.25:80/webService/register.php";
+    private static final String LOGIN_URL = "http://192.168.1.8:80/webService/register.php";
     private static final String TAG_SUCCESS = "success";
     private static final String TAG_MESSAGE = "message";
 

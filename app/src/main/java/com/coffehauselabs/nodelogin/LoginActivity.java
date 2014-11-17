@@ -33,7 +33,7 @@ public class LoginActivity extends Activity implements OnClickListener{
     JSONParser jsonParser = new JSONParser();
 
     //PHP LOGIN SCRIPT (CHECK OTHER IP ADDRESS!!)
-    private static final String LOGIN_URL = "http://10.0.0.25:80/webService/login.php";
+    private static final String LOGIN_URL = "http://192.168.1.8:80/webService/login.php";
 
     //JSON ELEMENT IDS FROM RESPONSE OF PHP SCRIPTS
     private static final String TAG_SUCCESS = "success";
