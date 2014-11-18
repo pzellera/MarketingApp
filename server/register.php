@@ -77,7 +77,7 @@ if (!empty($_POST)) {
     //Again, we need to update our tokens with the actual data:
     $query_params = array(
         ':user' => $_POST['username'],
-        ':pass' => $_POST['password']
+        ':pass' => crypt($_POST['password'])
     );
     
     //time to run our query, and create the user
