@@ -6,7 +6,9 @@
     android:orientation="vertical"
     android:weightSum="1"
     android:animationCache="true"
-    android:background="#ffffffff">
+    android:background= "@drawable/newspaper"
+    android:baselineAligned="false"
+    android:clickable="true">
 
     <TextView
         android:layout_width="match_parent"
@@ -28,12 +30,12 @@
         android:layout_width="248dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:layout_marginTop="25dp"
-        android:id="@+id/email"
-        android:hint="Email"
+        android:layout_marginTop="60dp"
+        android:id="@+id/username"
+        android:hint="Username"
         android:textIsSelectable="false"
         android:singleLine="false"
-        android:layout_weight="0.06" />
+        android:layout_weight="0.06"/>
 
     <EditText
         android:layout_width="252dp"
@@ -44,16 +46,17 @@
         android:hint="Password"
         android:layout_weight="0.04" />
     <Button
-        android:layout_width="249dp"
-        android:layout_height="wrap_content"
+        android:layout_width="250dp"
+        android:layout_height="25dp"
         android:layout_gravity="center"
         android:id="@+id/loginBtn"
         android:background="@drawable/btn_login"
         android:textSize="22dp"
         android:textAlignment="center"
         android:text="Login"
-        android:layout_weight="0.13"
-        android:textColor="#ffffffff" />
+        android:layout_weight="0.09"
+        android:textColor="#ffffffff"
+        android:backgroundTintMode="src_over" />
 
         <LinearLayout
             android:layout_width="249dp"
@@ -62,15 +65,15 @@
             android:layout_gravity="center"
             android:orientation="horizontal" >
             <Button
-                android:layout_width="match_parent"
-                android:layout_height="62dp"
+                android:layout_width="250dp"
+                android:layout_height="50dp"
                 android:id="@+id/regBtn"
                 android:background="@drawable/btn_register"
                 android:textColor="#ffffff"
                 android:textAlignment="center"
                 android:text="Register"
                 android:textColorHint="#FF000000"
-                android:textSize="22dp"/>
+                android:textSize="22dp" />
 
     </LinearLayout>
 

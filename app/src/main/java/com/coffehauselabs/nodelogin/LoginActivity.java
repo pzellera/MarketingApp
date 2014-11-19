@@ -23,7 +23,7 @@ import android.widget.Toast;
 
 public class LoginActivity extends Activity implements OnClickListener{
 
-    private EditText userEmail, pass;
+    private EditText user, pass;
     private Button loginButton, regButton;
 
     //PROGRESS DIALOG
@@ -33,7 +33,7 @@ public class LoginActivity extends Activity implements OnClickListener{
     JSONParser jsonParser = new JSONParser();
 
     //PHP LOGIN SCRIPT (CHECK OTHER IP ADDRESS!!)
-    private static final String LOGIN_URL = "http://192.168.1.8:80/webService/login.php";
+    private static final String LOGIN_URL = "http://henrywinn.com/MarketingApp/server/login.php";
 
     //JSON ELEMENT IDS FROM RESPONSE OF PHP SCRIPTS
     private static final String TAG_SUCCESS = "success";
@@ -46,7 +46,7 @@ public class LoginActivity extends Activity implements OnClickListener{
         setContentView(R.layout.activity_login);    //Get content view from activity_login
 
         //setup input fields
-        userEmail= (EditText)findViewById(R.id.email);
+        user= (EditText)findViewById(R.id.username);
         pass = (EditText)findViewById(R.id.password);
 
         //setup buttons
@@ -94,7 +94,7 @@ public class LoginActivity extends Activity implements OnClickListener{
         protected String doInBackground(String... args){
             //CHECK FOR SUCCESS TAG
             int success;
-            String username = userEmail.getText().toString();
+            String username = user.getText().toString();
             String password = pass.getText().toString();
 
             try{

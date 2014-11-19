@@ -4,7 +4,7 @@
     <string name="app_name">Node Login</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
-    <string name="login_screen">Login Page</string>
+    <string name="login_screen">Wall Market</string>
     <string name="register_screen">Registration Page</string>
 
 </resources>
