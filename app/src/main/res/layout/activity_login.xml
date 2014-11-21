@@ -22,9 +22,8 @@
         android:textAllCaps="false"
         android:textIsSelectable="false"
         android:editable="false"
-        android:textSize="50dp"
-        android:paddingTop="50dp"
-        android:textStyle="italic" />
+        android:textSize="45dp"
+        android:paddingTop="50dp" />
 
     <EditText
         android:layout_width="248dp"
@@ -35,7 +34,8 @@
         android:hint="Username"
         android:textIsSelectable="false"
         android:singleLine="false"
-        android:layout_weight="0.06"/>
+        android:layout_weight="0.06"
+/>
 
     <EditText
         android:layout_width="252dp"
@@ -55,8 +55,7 @@
         android:textAlignment="center"
         android:text="Login"
         android:layout_weight="0.09"
-        android:textColor="#ffffffff"
-        android:backgroundTintMode="src_over" />
+        android:textColor="#ffffffff" />
 
         <LinearLayout
             android:layout_width="249dp"
