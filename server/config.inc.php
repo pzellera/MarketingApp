@@ -1,4 +1,7 @@
 <?php 
+		error_reporting(E_ALL);
+		ini_set('display_errors', '1');
+		
 
     // These variables define the connection information for your MySQL database 
     $username = "okcompu1_peyway"; 
@@ -6,6 +9,7 @@
     $host = "localhost"; 
     $dbname = "okcompu1_marketingapp"; 
 
+		require('password.php');
 
 // UTF-8 is a character encoding scheme that allows you to conveniently store 
     // a wide varienty of special characters, like ¢ or €, in your database. 
