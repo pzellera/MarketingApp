@@ -11,6 +11,7 @@ import org.json.JSONObject;
 import android.app.Activity;
 import android.app.ProgressDialog;
 import android.content.Intent;
+import android.graphics.Typeface;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.util.Log;
@@ -19,6 +20,7 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class LoginActivity extends Activity implements OnClickListener{
@@ -45,6 +47,10 @@ public class LoginActivity extends Activity implements OnClickListener{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);    //Get content view from activity_login
 
+        TextView txtView = (TextView) findViewById(R.id.loginView);
+        Typeface font = Typeface.createFromAsset(getAssets(), "Cantarell-Bold.ttf");
+        txtView.setTypeface(font);
+
         //setup input fields
         user= (EditText)findViewById(R.id.username);
         pass = (EditText)findViewById(R.id.password);
@@ -56,7 +62,7 @@ public class LoginActivity extends Activity implements OnClickListener{
         //register listeners
         loginButton.setOnClickListener(this);
         regButton.setOnClickListener(this);
-    }
+    } 
 
     //LOOK FOR WHICH BUTTON IS PRESSED
     @Override
