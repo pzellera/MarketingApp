@@ -8,6 +8,7 @@ import org.json.JSONException;
 import org.json.JSONObject;
 import android.app.Activity;
 import android.app.ProgressDialog;
+import android.graphics.Typeface;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.util.Log;
@@ -15,6 +16,7 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 
@@ -41,6 +43,10 @@ public class    RegisterActivity extends Activity implements OnClickListener{
         super.onCreate(savedInstanceState);
         // Get the view from activity_register
         setContentView(R.layout.activity_register);
+
+        TextView txtView = (TextView) findViewById(R.id.registerView);
+        Typeface font = Typeface.createFromAsset(getAssets(), "ArchitectsDaughter.ttf");
+        txtView.setTypeface(font);
 
         user = (EditText)findViewById(R.id.email);
         pass = (EditText)findViewById(R.id.password);

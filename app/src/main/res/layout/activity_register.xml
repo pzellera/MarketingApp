@@ -2,7 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#ffffffff"
+    android:background= "@drawable/nature"
     android:orientation="vertical"
     android:weightSum="1">
     <TextView
@@ -18,11 +18,10 @@
         android:textIsSelectable="false"
         android:editable="false"
         android:textSize="50dp"
-        android:paddingTop="50dp"
-        android:textStyle="italic" />
+        android:paddingTop="50dp"/>
 
     <EditText
-        android:layout_width="239dp"
+        android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:id="@+id/email"
         android:layout_gravity="center"
@@ -32,7 +31,7 @@
         android:text="Email" />
     
     <EditText
-        android:layout_width="233dp"
+        android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:id="@+id/password"
@@ -42,12 +41,14 @@
         android:layout_weight="0.03" />
 
     <Button
-        android:layout_width="236dp"
-        android:layout_height="wrap_content"
-        android:text="Register"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
         android:id="@+id/regBtn"
-        android:layout_gravity="center_horizontal"
-        android:backgroundTint="#ffff3334"
-        android:textSize="20dp"
-        android:layout_weight="0.05" />
+        android:background="@drawable/btn_register"
+        android:textColor="#ffffff"
+        android:textAlignment="center"
+        android:text="Register"
+        android:textColorHint="#FF000000"
+        android:textSize="22dp"
+        android:layout_gravity="center_horizontal" /> />
 </LinearLayout>

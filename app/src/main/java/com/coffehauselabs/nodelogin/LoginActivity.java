@@ -48,7 +48,7 @@ public class LoginActivity extends Activity implements OnClickListener{
         setContentView(R.layout.activity_login);    //Get content view from activity_login
 
         TextView txtView = (TextView) findViewById(R.id.loginView);
-        Typeface font = Typeface.createFromAsset(getAssets(), "Cantarell-Bold.ttf");
+        Typeface font = Typeface.createFromAsset(getAssets(), "ArchitectsDaughter.ttf");
         txtView.setTypeface(font);
 
         //setup input fields
@@ -62,7 +62,7 @@ public class LoginActivity extends Activity implements OnClickListener{
         //register listeners
         loginButton.setOnClickListener(this);
         regButton.setOnClickListener(this);
-    } 
+    }
 
     //LOOK FOR WHICH BUTTON IS PRESSED
     @Override
