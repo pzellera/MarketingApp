@@ -25,10 +25,9 @@
         android:layout_height="wrap_content"
         android:id="@+id/email"
         android:layout_gravity="center"
-        android:hint="example@email.com"
-        android:textColorHint="#FF000000"
+        android:textColorHint="#ff050505"
         android:layout_weight="0.03"
-        android:text="Email" />
+        android:hint="Email" />
     
     <EditText
         android:layout_width="250dp"
