@@ -6,7 +6,7 @@
     android:orientation="vertical"
     android:weightSum="1"
     android:animationCache="true"
-    android:background= "@drawable/androidPol"
+    android:background= "@drawable/nature"
     android:baselineAligned="false"
     android:clickable="true">
 
